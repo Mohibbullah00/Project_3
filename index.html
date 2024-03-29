@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financ F++</title>
+
+    <!-- google icon link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0" />
+
+    <!-- Tailwindcss link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- home page -->
+    <div class="bg-[#F5F5F5]">
+        <!-- financ -->
+        <div class="financ lg:px-[132px] md:px-[64px] px-[34px]">
+            <!-- header -->
+            <div class="flex items-center justify-between pt-[45px]">
+                <!-- logo -->
+                <div class="logo cursor-pointer">
+                    <!-- image -->
+                    <figure>
+                        <img src="./img/logo.svg" alt="">
+                    </figure>
+                    <!-- image end -->
+                </div>
+                <!-- logo end -->
+
+                <!-- navbar -->
+                <nav class="navbar transition-all capitalize lg:block hidden">
+                    <!-- link -->
+                    <a class="inline-block text-[#FFFFFF] text-[15px] px-[32px]" href="#">Home</a>
+                    <!-- link ebd -->
+                    <!-- link -->
+                    <a class="inline-block text-[#FFFFFF] text-[15px] px-[32px]" href="#">Staking</a>
+                    <!-- link ebd -->
+                    <!-- link -->
+                    <a class="inline-block text-[#FFFFFF] text-[15px] px-[32px]" href="#">About</a>
+                    <!-- link ebd -->
+                    <!-- link -->
+                    <a class="inline-block text-[#FFFFFF] text-[15px] px-[32px]" href="#">Rewards</a>
+                    <!-- link ebd -->
+                </nav>
+                <!-- navbar end -->
+
+                <!-- staking button -->
+                <div class="stiking-btn lg:block hidden">
+                    <a class="block bg-[#261F48] text-[#FFF] text-base py-[20px] px-[52px] rounded-[30px]" href="#">Staking</a>
+                </div>
+                <!-- staking button end -->
+
+                <!-- bars icon -->
+                <div id="bars" class="lg:hidden block cursor-pointer">
+                    <span class="text-[#FFFFFF] text-[28px] pt-[7px] material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+                <!-- bars icon end -->
+
+                <!-- side bar -->
+                <div id="side" class="block lg:hidden fixed top-0 right-0 bg-[#1f2937] h-screen lg:w-72 md:w-72 w-56 z-40 transition-all">
+
+                    <!-- logo -->
+                    <div class="bg-[#a03dc8]">
+                        <div class="flex items-center justify-center py-5">
+                            <img src="./img/logo.svg" alt="">
+                        </div>
+
+                        <div id="close_bars" class="lg:hidden absolute top-[24px] -left-[8px] flex items-center justify-center text-white text-base bg-orange-500 w-5 h-5 rounded-full hover:bg-blue-500 transition cursor-pointer">
+                            X
+                        </div>
+                    </div>
+                    <!-- logo end -->
+                    <div class="space-y-[30px] text-center">
+                        <!-- single link -->
+                        <a class="block text-white mt-[30px] py-3 px-4 hover:bg-gray-900 border-l-4 border-transparent hover:border-red-600" href="#">Home</a>
+                        <!-- single link end -->
+
+                        <!-- single link -->
+                        <a class="block text-white py-3 px-4 hover:bg-gray-900 border-l-4 border-transparent hover:border-red-600" href="#">Staking</a>
+                        <!-- single link end -->
+
+                        <!-- single link -->
+                        <a class="block text-white py-3 px-4 hover:bg-gray-900 border-l-4 border-transparent hover:border-red-600" href="#">About</a>
+                        <!-- single link end -->
+
+                        <!-- single link -->
+                        <a class="block text-white py-3 px-4 hover:bg-gray-900 border-l-4 border-transparent hover:border-red-600" href="#">Rewards</a>
+                        <!-- single link end -->
+                    </div>
+                </div>
+                <!-- side bar end -->
+            </div>
+            <!-- header end -->
+
+            <!-- home section -->
+            <section class="grid lg:grid-cols-2 md:grid-cols-2 items-center gap-2 lg:pb-[45px] lg:pt-[0px] pt-[90px] pb-[35px]">
+                <!-- content -->
+                <div class="col-span-1 lg:ml-0 mx-auto">
+                    <h2 class="text-[#FFFFFF] lg:text-[80px] md:text-[70px] text-[45px] lg:leading-[85px] md:leading-[65px] leading-[50px]"><span class="g-color">Stake</span> and <br> Earn Passive <br> Income</h2>
+
+                    <p class="text-[#CDC7F4] text-[15px] pt-[25px] mb-[31px]">The Ultimate Guide to Crypto Staking: Maximizing Your Returns and <br> Securing Your Future</p>
+                    <!-- button -->
+                    <div class="flex items-center gap-6">
+                        <div class="py-1">
+                            <!-- link -->
+                            <a class="flex items-center gap-[19px] bg-[#2862FA] rounded-[50px] text-[#FFFFFF] text-base py-[21px] px-[41px]" href="#">
+
+                                <span>Get started</span>
+
+                                <img class="text-[#FFFFFF] pt-[3px]" src="./img/Arrow 1.svg" alt="">
+                            </a>
+                            <!-- link end -->
+                        </div>
+                        <div class="py-1 lg:block hidden">
+                            <!-- link -->
+                            <a class="flex items-center justify-center text-base py-[21px] px-[34px] bg-[#261F48] rounded-[50px] text-[#FFFFFF]" href="#">Learn more</a>
+                            <!-- link end -->
+                        </div>
+                    </div>
+                    <!-- button end -->
+                </div>
+                <!-- content end -->
+
+                <!-- image -->
+                <div class="col-span-1 w-full">
+                    <figure class="w-full">
+                        <img class="w-full" src="./img/home.svg" alt="">
+                    </figure>
+                </div>
+                <!-- image end -->
+            </section>
+            <!-- home section end -->
+        </div>
+        <!-- financ end -->
+
+        <!-- simple way -->
+        <div class="simple lg:px-[135px] md:px-[64px] px-[34px] py-[45px]">
+            <!-- title -->
+            <div class="text-center py-[45px]">
+                <h2 class="lg:text-[45px] text-[25px] lg:leading-[55px] leading-[35px]">Simple Way to <span class="g-color">Earn Passive Income</span></h2>
+            </div>
+            <!-- title end -->
+
+            <!-- card -->
+            <div class="grid lg:grid-cols-3 md:grid-cols-3 gap-5">
+                <!-- single card -->
+                <div class="bg-[fff] py-[30px] px-[30px] border border-[#ECECEC] rounded-[20px] cursor-pointer hover:border hover:border-[#F5AC3D] mb-[15px]">
+                    <div class="flex items-center gap-7 mb-[26px]">
+                        <figure>
+                            <img class="w-full" src="./img/icon-2.svg" alt="">
+                        </figure>
+                        <h3 class="text-[25px] text-[#201339]">Deposit</h3>
+                    </div>
+
+                    <p class="text-[#383069] text-[15px] pb-[11px]">The Ultimate Guide to Crypto Staking: Maximizing Your Returns and Securing Your Future</p>
+                </div>
+                <!-- single card end -->
+
+                <!-- single card -->
+                <div class="bg-[fff] py-[30px] px-[30px] border border-[#ECECEC] rounded-[20px] cursor-pointer hover:border hover:border-[#F5AC3D] mb-[15px]">
+                    <div class="flex items-center gap-7 mb-[26px]">
+                        <figure>
+                            <img class="w-full" src="./img/icon-2.svg" alt="">
+                        </figure>
+                        <h3 class="text-[25px] text-[#201339]">Stake</h3>
+                    </div>
+
+                    <p class="text-[#383069] text-[15px] pb-[11px]">The Ultimate Guide to Crypto Staking: Maximizing Your Returns and Securing Your Future</p>
+                </div>
+                <!-- single card end -->
+
+                <!-- single card -->
+                <div class="bg-[fff] py-[30px] px-[30px] border border-[#ECECEC] rounded-[20px] cursor-pointer hover:border hover:border-[#F5AC3D] mb-[15px]">
+                    <div class="flex items-center gap-7 mb-[26px]">
+                        <figure>
+                            <img class="w-full" src="./img/icon-3.svg" alt="">
+                        </figure>
+                        <h3 class="text-[25px] text-[#201339]">Enjoy Rewards</h3>
+                    </div>
+
+                    <p class="text-[#383069] text-[15px] pb-[11px]">The Ultimate Guide to Crypto Staking: Maximizing Your Returns and Securing Your Future</p>
+                </div>
+                <!-- single card end -->
+            </div>
+            <!-- card end -->
+        </div>
+        <!-- simple way end -->
+
+        <!-- secure -->
+        <div class="secure lg:px-[135px] md:px-[64px] px-[34px] py-[45px] lg:pt-[140px] pt-[48px]">
+            <!-- title -->
+            <div class="text-center pb-[45px]">
+                <h2 class="lg:text-[45px] text-[25px] text-[#201339]">Secure, Reliable, and User-Friendly</h2>
+            </div>
+            <!-- title end -->
+
+            <!-- image -->
+            <div class="secure-image py-3 relative mb-[56px]">
+                <figure  class="max-w-[436px] m-auto">
+                    <img class="w-full" src="./img/chart.svg" alt="">
+                </figure>
+                <figure class="absolute top-[77px] left-0 lg:block hidden">
+                    <img src="./img/secure-line.svg" alt="">
+                </figure>
+            </div>
+            <!-- image end -->
+
+            <!-- user -->
+            <div class="max-w-[804px] mx-auto grid lg:grid-cols-3 md:grid-cols-3 items-center gap-[80px]">
+                <!-- paid user -->
+                <div class="flex items-center justify-center gap-[22px]">
+                    <!-- images -->
+                    <figure class="w-[57px]">
+                        <img class="w-full" src="./img/secure-1.svg" alt="" />
+                    </figure>
+                    <!-- images end -->
+
+                    <!-- content -->
+                    <div class="">
+                        <span class="text-[#201339] text-[36px]">350m+</span>
+                        <p class="text-[#383069] text-base">Interest paid</p>
+                    </div>
+                    <!-- content end -->
+                </div>
+                <!-- paid user end -->
+
+                <!-- paid user -->
+                <div class="flex items-center justify-center gap-[22px]">
+                    <!-- images -->
+                    <figure class="w-[57px]">
+                        <img class="w-full" src="./img/secure-2.svg" alt="" />
+                    </figure>
+                    <!-- images end -->
+
+                    <!-- content -->
+                    <div class="">
+                        <span class="text-[#201339] text-[36px]">50+</span>
+                        <p class="text-[#383069] text-base">Cryptocurrency coins</p>
+                    </div>
+                    <!-- content end -->
+                </div>
+                <!-- paid user end -->
+
+                <!-- paid user -->
+                <div class="flex items-center justify-center gap-[22px]">
+                    <!-- images -->
+                    <figure class="w-[57px]">
+                        <img class="w-full" src="./img/secure-3.svg" alt="" />
+                    </figure>
+                    <!-- images end -->
+
+                    <!-- content -->
+                    <div class="">
+                        <span class="text-[#201339] text-[36px]">5m+</span>
+                        <p class="text-[#383069] text-base">Users worldwide</p>
+                    </div>
+                    <!-- content end -->
+                </div>
+                <!-- paid user end -->
+            </div>
+            <!-- user end -->
+        </div>
+        <!-- secure end -->
+
+        <!-- passive income -->
+        <div class="lg:px-[135px] lg:py-[140px] py-[48px] md:px-[64px] px-[34px] pass">
+            <!-- title logo -->
+            <div class="flex gap-[80px] mb-[52px] w-full">
+                <!-- image -->
+                <figure class="lg:block hidden w-1/6">
+                    <img src="./img/income-title-img.svg" alt="">
+                </figure>
+                <!-- image end -->
+                <!-- title -->
+                <div class="capitalize w-4/6 lg:m-auto md:m-auto">
+                    <h2 class="text-[#201339] lg:text-[45px] md:text-[43px] text-[25px] lg:leading-[55px] md:leading-[53px] leading-[35px] mb-2 max-w-[503px] mx-auto">Calculate your passive <br> <span class="g-color">income</span></h2>
+
+                    <p class="lg:text-[15px] text-[13px] text-[#383069] max-w-[503px] mx-auto">The Ultimate Guide to Crypto Staking: Maximizing Your Returns and Securing Your Future</p>
+                </div>
+                <!-- title end -->
+
+                <!-- button -->
+                <div class="lg:block hidden btn w-1/6">
+                    <a class="inline-block text-[#FFFFFF] bg-[#2862FA] text-[15px] py-[6px] px-[20px] rounded-[24px]" href="#">How it works</a>
+                </div>
+                <!-- button end -->
+            </div>
+            <!-- title logo end -->
+
+            <div class="relative">
+                <!-- user form -->
+                <div class="max-w-[531px] mx-auto bg-[#FFFFFF] rounded-[43px]">
+                    <!-- form -->
+                    <form class="w-full py-[30px] px-[28px]" action="#">
+                        <!-- single option -->
+                        <div class="w-full pt-[10px]">
+                            <h3 class="text-sm text-[#383069] mb-[9px]">Select plan</h3>
+                            <select class="w-full border border-[#ECECEC] rounded-[50px] text-base text-[#201339] py-[16px] px-[18px] bg-[#FFFFFF]" name="" id="">
+                                <option>Standard</option>
+                                <option>Basic</option>
+                                <option>Premium</option>
+                            </select>
+                        </div>
+                        <!-- single option end -->
+                        
+                        <!-- single option -->
+                        <div class="w-full mt-[24px]">
+                            <h3 class="text-sm text-[#383069] mb-[9px]">Amount</h3>
+                            <select class="w-full border border-[#ECECEC] rounded-[50px] text-base text-[#201339] py-[16px] px-[18px] bg-[#FFFFFF]" name="" id="">
+                                <option>0.089BTC</option>
+                                <option>0.099BTC</option>
+                                <option>0.189BTC</option>
+                            </select>
+                            <div class="flex items-center gap-[15px] py-1">
+                                <p class="text-[12px] text-[
+                                #383069]">Min amount $100</p>
+                                <p class="text-[12px] text-[#383069]">Max amount $5000</p>
+                            </div>
+                        </div>
+                        <!-- single option end -->
+
+                        <!-- single box -->
+                        <div class="py-[30px] w-full">
+                            <input class="w-full" type="range" name="" id="">
+                        </div>
+                        <!-- single box end -->
+                        
+                        <!-- single box -->
+                        <div class="w-full">
+                            <div class="pb-[5px]">
+                                <h5 class="text-[12px] text-[#000000]">Expected interest amount</h5>
+                            </div>
+
+                            <div class="flex items-center">
+                                <h3 class="text-[#000000] text-[15px]">Earn in USDT</h3>
+                                <p class="ml-auto text-[#201339] text-base">$450</p>
+                            </div>
+                        </div>
+                        <!-- single box end -->
+
+                        <!-- line -->
+                        <div class="w-full border-t border-[#ECECEC] mt-[11px]"></div>
+                        <!-- line end -->
+
+                        <!-- button -->
+                        <div class="mt-[69px]">
+                            <div class="pb-[24px] text-center">
+                                <button class="w-full text-[#2862FA] text-[15px] bg-[#F5F5F5] rounded-[62px] py-[7px]" type="submit">Transfer amount to other address</button>
+                            </div>
+
+                            <div class="text-center">
+                                <button class="w-full py-[17px] text-[20px] text-[#FFFFFF] bg-[#2862FA] rounded-[62px]" type="submit">Start Earning</button>
+                            </div>
+                        </div>
+                        <!-- button end -->
+                    </form>
+                    <!-- form end -->
+
+                    <!-- dollor icon -->
+                    <div class="lg:block hidden absolute bottom-[215px] left-0">
+                        <img src="./img/passive 1.svg" alt="">
+                    </div>
+                    <div class="lg:block hidden absolute bottom-[215px] right-0">
+                        <img src="./img/passive 2.svg" alt="">
+                    </div>
+                    <!-- dollor icon end -->
+                </div>
+                <!-- user form end -->
+            </div>
+        </div>
+        <!-- passive income end -->
+
+        <!-- earn with -->
+        <div class="lg:px-[135px] md:px-[64px] px-[25px] lg:pb-[136px] pb-[48px]">
+            <!-- title -->
+            <div class="capitalize text-center mb-[55px]">
+                <h2 class="text-[#201339] lg:text-[45px] md:text-[43px] text-[25px]">Why Earn with <span class="g-color">Financ+</span></h2>
+            </div>
+            <!-- title end -->
+
+            <!-- card -->
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 items-center gap-[30px] transition-all">
+                <!-- single card -->
+                <div class="col-span-1 text-center px-[67px] py-[52px] border border-[#ECECEC] rounded-[25px] cursor-pointer hover:border hover:border-[#F5AC3D]">
+                    <!-- image -->
+                    <figure class="w-[146px] mx-auto">
+                        <img class="w-full" src="./img/earn1.svg" alt="" />
+                    </figure>
+                    <!-- image end -->
+                    <!-- content -->
+                    <div class="my-[6px]">
+                        <h3 class="text-[30px] text-[#383069] py-[32px]">Totally Secure</h3>
+                        <p class="text-[15px] text-[#383069]">The Ultimate Guide to Crypto Staking: Maximizing Your Returns and Securing Your Future</p>
+                    </div>
+                    <!-- content end -->
+                </div>
+                <!-- single card end -->
+
+                
+                <!-- single card -->
+                <div class="col-span-1 text-center px-[67px] py-[52px] border border-[#ECECEC] rounded-[25px] bg-[#2862FA] cursor-pointer hover:border hover:border-[#F5AC3D]">
+                    <!-- image -->
+                    <figure class="w-[162px] mx-auto">
+                        <img class="w-full" src="./img/earn2.svg" alt="" />
+                    </figure>
+                    <!-- image end -->
+                    <!-- content -->
+                    <div class="my-[6px]">
+                        <h3 class="text-[30px] py-[32px] text-[#FFFFFF]">Daily Payouts</h3>
+                        <p class="text-[15px] text-[#FFFFFF]">The Ultimate Guide to Crypto Staking: Maximizing Your Returns and Securing Your Future</p>
+                    </div>
+                    <!-- content end -->
+                </div>
+                <!-- single card end -->
+
+                <!-- single card -->
+                <div class="col-span-1 text-center px-[67px] py-[52px] border border-[#ECECEC] rounded-[25px] cursor-pointer hover:border hover:border-[#F5AC3D]">
+                    <!-- image -->
+                    <figure class="w-[146px] mx-auto">
+                        <img class="w-full" src="./img/earn3.svg" alt="" />
+                    </figure>
+                    <!-- image end -->
+                    <!-- content -->
+                    <div class="my-[6px]">
+                        <h3 class="text-[30px] text-[#383069] py-[32px]">Flexible Earning</h3>
+                        <p class="text-[15px] text-[#383069]">The Ultimate Guide to Crypto Staking: Maximizing Your Returns and Securing Your Future</p>
+                    </div>
+                    <!-- content end -->
+                </div>
+                <!-- single card end -->
+            </div>
+            <!-- card end -->
+        </div>
+        <!-- earn with end -->
+
+        <!-- plan -->
+        <div class="lg:px-[135px] md:px-[64px] px-[34px] lg:pb-[136px] pb-[48px]">
+            <!-- title -->
+            <div class="capitalize mb-[52px]">
+                <h2 class="text-[#201339] lg:text-[45px] md:text-[43px] text-[25px]">Choose your <i>plans now</i></h2>
+            </div>
+            <!-- title end -->
+
+            <!-- card -->
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 items-center gap-[30px]">
+                <!-- single card -->
+                <div class="px-[30px] py-[35px] border border-[#ECECEC] rounded-[25px] relative">
+                    <div class="flex items-center gap-2 mb-[11px]">
+                        <figure class="w-[66px]">
+                            <img class="w-full" src="./img/plan1.svg" alt="">
+                        </figure>
+                        <h3 class="text-[30px] text-[#000000]">Standards</h3>
+                    </div>
+                    <div class="absolute top-[10px] right-[10px]">
+                        <span class="text-[#149F5E] text-[15px] bg-[#149F5E1A] py-[5px] px-[18px] rounded-[23px]">5% monthly</span>
+                    </div>
+                    <p class="text-[15px] text-[#383069] py-[25px]">The Ultimate Guide to Crypto Staking: Maximizing Your Returns and Securing Your Future</p>
+
+                    <!-- button -->
+                    <div class="py-1">
+                        <a class="flex items-center gap-[16px] cursor-pointer text-[15px] text-[#2862FA]" href="#">
+                            Lean more
+                            <img class="pt-[5px]" src="./img/Arrow.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- button end -->
+                </div>
+                <!-- single card end -->
+                <!-- single card -->
+                <div class="px-[30px] py-[35px] border border-[#ECECEC] rounded-[25px] relative">
+                    <div class="flex items-center gap-2 mb-[11px]">
+                        <figure class="w-[66px]">
+                            <img class="w-full" src="./img/plan2.svg" alt="">
+                        </figure>
+                        <h3 class="text-[30px] text-[#000000]">Plus</h3>
+                    </div>
+                    <div class="absolute top-[10px] right-[10px]">
+                        <span class="text-[#26BDED] text-[15px] bg-[#3FCBF81A] py-[5px] px-[18px] rounded-[23px]">15% monthly</span>
+                    </div>
+                    <p class="text-[15px] text-[#383069] py-[25px]">The Ultimate Guide to Crypto Staking: Maximizing Your Returns and Securing Your Future</p>
+
+                    <!-- button -->
+                    <div class="py-1">
+                        <a class="flex items-center gap-[16px] cursor-pointer text-[15px] text-[#2862FA]" href="#">
+                            Lean more
+                            <img class="pt-[5px]" src="./img/Arrow.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- button end -->
+                </div>
+                <!-- single card end -->
+
+                <!-- single card -->
+                <div class="px-[30px] py-[35px] border border-[#ECECEC] rounded-[25px] relative">
+                    <div class="flex items-center gap-2 mb-[11px]">
+                        <figure class="w-[66px]">
+                            <img class="w-full" src="./img/plan3.svg" alt="">
+                        </figure>
+                        <h3 class="text-[30px] text-[#000000]">Platinum</h3>
+                    </div>
+                    <div class="absolute top-[10px] right-[10px]">
+                        <span class="text-[#4D7FFF] text-[15px] bg-[#4D7FFF1A] py-[5px] px-[18px] rounded-[23px]">15% monthly</span>
+                    </div>
+                    <p class="text-[15px] text-[#383069] py-[25px]">The Ultimate Guide to Crypto Staking: Maximizing Your Returns and Securing Your Future</p>
+
+                    <!-- button -->
+                    <div class="py-1">
+                        <a class="flex items-center gap-[16px] cursor-pointer text-[15px] text-[#2862FA]" href="#">
+                            Lean more
+                            <img class="pt-[5px]" src="./img/Arrow.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- button end -->
+                </div>
+                <!-- single card end -->
+            </div>
+            <!-- card end -->
+        </div>
+        <!-- plan end -->
+
+        <!-- refer -->
+        <div class="refer lg:px-[135px] md:px:[64px] px-[34px] lg:pb-[136px] pb-[48px]">
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 items-center gap-[50pxpx] bg-[#2862FA] pb-[69px] pt-[76px] rounded-[25px] space-y-[20px] px-[20px] relative">
+                <!-- image -->
+                <figure class="col-span-1 mx-auto">
+                    <img src="./img/refer-img.svg" alt="">
+                </figure>
+                <!-- image end -->
+
+                <!-- content -->
+                <div class="col-span-1 mx-auto z-50">
+                    <h2 class="lg:text-[45px] md:text-[43px] text-[35px] text-[#FFFFFF] lg:leading-[55px] leading-[35px] mb-[34px]">Refer and earns <br> rewards</h2>
+                    <p class="text-[15px] text-[#FFFFFF] mb-[48px]">The Ultimate Guide to Crypto Staking: Maximizing <br> Your Returns and Securing Your Future</p>
+
+                    <a class="inline-block text-[#2862FA] bg-[#FFFFFF] text-base py-[25px] px-[47px] rounded-[50px]" href="#">Apply now</a>
+                </div>
+                <!-- content end -->
+
+                <div class="absolute top-0 right-[17px] md:block hidden z-10">
+                    <figure>
+                        <img src="./img/Ellipse 1552.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <!-- refer end -->
+
+        <!-- customer -->
+        <div class="lg:px-[135px] md:px-[64px] px-[34px] lg:pb-[136px] pb-[48px]">
+            <!-- title -->
+            <div class="text-center mb-[52px]">
+                <h2 class="text-[#201339] lg:text-[50px] md:text-[38px] text-[27px]">What our customers says</h2>
+            </div>
+            <!-- title end -->
+
+            <!-- card -->
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 items-center gap-[30px] relative">
+                <!-- single card -->
+                <div class="border border-[#ECECEC] rounded-[20px] py-[48px] px-[38px]">
+                    <div class="flex items-center gap-[14px]">
+                        <figure>
+                            <img src="./img/customer.svg" alt="">
+                        </figure>
+                        <h4 class="text-[#201339] text-[20px]">Jessica jessi</h4>
+                    </div>
+
+                    <div class="pt-[45px]">
+                        <figure>
+                            <img src="./img/icon.svg" alt="">
+                        </figure>
+                    </div>
+                    <p class="py-[19px] text-[#383069] text-[18px]">Join 5+ million people who already trust us with their money Join 5+ million people who already trust us with their money</p>
+                </div>
+                <!-- single card end -->
+                <!-- single card -->
+                <div class="border border-[#ECECEC] rounded-[20px] py-[48px] px-[38px]">
+                    <div class="flex items-center gap-[14px]">
+                        <figure>
+                            <img src="./img/customer.svg" alt="">
+                        </figure>
+                        <h4 class="text-[#201339] text-[20px]">Jessica jessi</h4>
+                    </div>
+
+                    <div class="pt-[45px]">
+                        <figure>
+                            <img src="./img/icon.svg" alt="">
+                        </figure>
+                    </div>
+                    <p class="py-[19px] text-[#383069] text-[18px]">Join 5+ million people who already trust us with their money Join 5+ million people who already trust us with their money</p>
+                </div>
+                <!-- single card end -->
+                <!-- single card -->
+                <div class="border border-[#ECECEC] rounded-[20px] py-[48px] px-[38px]">
+                    <div class="flex items-center gap-[14px]">
+                        <figure>
+                            <img src="./img/customer.svg" alt="">
+                        </figure>
+                        <h4 class="text-[#201339] text-[20px]">Jessica jessi</h4>
+                    </div>
+
+                    <div class="pt-[45px]">
+                        <figure>
+                            <img src="./img/icon.svg" alt="">
+                        </figure>
+                    </div>
+                    <p class="py-[19px] text-[#383069] text-[18px]">Join 5+ million people who already trust us with their money Join 5+ million people who already trust us with their money</p>
+                </div>
+                <!-- single card end -->
+
+                <!-- arrow -->
+                <div class="lg:block hidden absolute top-[155px] -left-[18px] w-[36px] h-[36px] rounded-full bg-[#E4ECFF] text-[#2862FA]  border border-[#2862FA] hover:bg-[#2862FA] hover:text-[#FFFFFF] cursor-pointer flex items-center justify-center text-center">
+                    <span class="material-symbols-outlined pt-[3px] pl-[3px]">
+                        arrow_back
+                    </span>
+                </div>
+
+                <div class="lg:block hidden absolute top-[155px] -right-[18px] w-[36px] h-[36px] rounded-full bg-[#E4ECFF] text-[#2862FA] border border-[#2862FA] hover:bg-[#2862FA] hover:text-[#FFFFFF] cursor-pointer">
+                    <span class="material-symbols-outlined pt-[3px] pl-[3px]">
+                        arrow_forward
+                    </span>
+                </div>
+                <!-- arrow end -->
+            </div>
+            <!-- card end -->
+        </div>
+        <!-- customer end -->
+
+        <!-- question -->
+        <div class="lg:px-[135px] md:px-[64px] px-[34px] lg:pb-[136px] pb-[48px]">
+            <!-- title -->
+            <div class="mb-[43px] text-center">
+                <h2 class="text-[#201339] lg:text-[55px] md:text-[47px] text-[29px] lg:leading-[55px] md:leading-[53px] leading-[35px] ">You've got <span class="g-color">questions,</span> <i><b>we have</b></i> <br> answers ready*</h2>
+            </div>
+            <!-- title end -->
+
+            <!-- question -->
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 items-center gap-[35px]">
+                <!-- flex one -->
+                <div class="col-span-1">
+                    <!-- single -->
+                    <div class="bg-[#FFFFFF] py-[20px] px-[22px] w-full flex items-center rounded-[10px] cursor-pointer mb-[28px]">
+                        <h3 class="text-lg text-[#201339]">What is staking?</h3>
+                        <span class="material-symbols-outlined ml-auto g-color">
+                            add
+                        </span>
+                    </div>
+                    <!-- single end -->
+                    <!-- single -->
+                    <div class="bg-[#FFFFFF] py-[20px] px-[22px] w-full flex items-center rounded-[10px] cursor-pointer mb-[28px]">
+                        <h3 class="text-lg text-[#201339]">How does staking work?</h3>
+                        <span class="material-symbols-outlined ml-auto g-color">
+                            add
+                        </span>
+                    </div>
+                    <!-- single end -->
+                    <!-- single -->
+                    <div class="bg-[#FFFFFF] py-[20px] px-[22px] w-full flex items-center rounded-[10px] cursor-pointer">
+                        <h3 class="text-lg text-[#201339]">Are my staking rewards taxable income?</h3>
+                        <span class="material-symbols-outlined ml-auto g-color">
+                            add
+                        </span>
+                    </div>
+                    <!-- single end -->
+                </div>
+                <!-- flex one end -->
+                <!-- flex two -->
+                <div class="col-span-1">
+                    <!-- single -->
+                    <div class="bg-[#FFFFFF] py-[20px] px-[22px] w-full flex items-center rounded-[10px] cursor-pointer mb-[28px]">
+                        <h3 class="text-lg text-[#201339]">What cryptos can I stake?</h3>
+                        <span class="material-symbols-outlined ml-auto g-color">
+                            add
+                        </span>
+                    </div>
+                    <!-- single end -->
+                    <!-- single -->
+                    <div class="bg-[#FFFFFF] py-[20px] px-[22px] w-full flex items-center rounded-[10px] cursor-pointer mb-[28px]">
+                        <h3 class="text-lg text-[#201339]">Is staking risky?</h3>
+                        <span class="material-symbols-outlined ml-auto g-color">
+                            add
+                        </span>
+                    </div>
+                    <!-- single end -->
+                    <!-- single -->
+                    <div class="bg-[#FFFFFF] py-[20px] px-[22px] w-full flex items-center rounded-[10px] cursor-pointer mb-[28px]">
+                        <h3 class="text-lg text-[#201339]">How does staking work?</h3>
+                        <span class="material-symbols-outlined ml-auto g-color">
+                            add
+                        </span>
+                    </div>
+                    <!-- single end -->
+                </div>
+                <!-- flex two end -->
+            </div>
+            <!-- question end -->
+        </div>
+        <!-- question end -->
+
+        <!-- join people -->
+        <div class="lg:px-[135px] md:px-[64px] px-[34px] lg:pb-[136px] pb-[48px]">
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 items-center bg-[#F6F6FC] rounded-[25px] p-[56px] space-y-[20px]">
+                <!-- single -->
+                <div class="col-span-1">
+                    <h2 class="text-[#201339] lg:text-[45px] md:text-[43px] text-[24px] lg:leading-[58px] md:leading-[55px] leading-[35px]">Join <span class="text-[#2862FA]">5+ million</span> people <br> who already trust us with their money</h2>
+
+                    <div class="py-1 max-w-[214px] mt-[35px]">
+                        <!-- link -->
+                        <a class="flex items-center gap-[19px] bg-[#2862FA] rounded-[50px] text-[#FFFFFF] text-base py-[21px] px-[41px]" href="#">
+
+                            <span>Get started</span>
+
+                            <img class="text-[#FFFFFF] pt-[3px]" src="./img/Arrow 1.svg" alt="">
+                        </a>
+                        <!-- link end -->
+                    </div>
+                </div>
+                <!-- single end -->
+                
+                <!-- single -->
+                <div class="col-span-1 mx-auto">
+                    <figure class="w-full">
+                        <img class="w-full" src="./img/multi-coin.png" alt="">
+                    </figure>
+                </div>
+                <!-- single end -->
+            </div>
+        </div>
+        <!-- join people end -->
+
+        <!-- with -->
+        <div class="bg-[#150F2F] lg:px-[135px] md:px-[64px] px-[34px] py-[65px] mb-[85px] flex items-center justify-center">
+            <div class="flex items-center lg:gap-[100px] gap-[20px]">
+                <figure class="cursor-pointer">
+                    <img class="w-full" src="./img/sponsor/image 1.svg" alt="">
+                </figure>
+                <figure class="cursor-pointer">
+                    <img class="w-full" src="./img/sponsor/image 2.svg" alt="">
+                </figure>
+                <figure class="cursor-pointer">
+                    <img class="w-full" src="./img/sponsor/image 3.svg" alt="">
+                </figure>
+                <figure class="cursor-pointer">
+                    <img class="w-full" src="./img/sponsor/image 4.svg" alt="">
+                </figure>
+            </div>
+        </div>
+        <!-- with end -->
+
+        <!-- footer -->
+        <div class="lg:px-[135px] md:px-[64px] px-[34px] py-[30px]">
+            <div class="grid lg:grid-cols-3 md:grid-cols-3 mb-[45px]">
+                <!-- single box -->
+                <div class="col-span-1 mb-[15px]">
+                    <figure>
+                        <img src="./img/social icon/footer-logo.svg" alt="">
+                    </figure>
+                    <p class="py-[19px] text-[#383069] text-[15px]">The Ultimate Guide to Crypto Staking: Maximizing Your Returns and Securing Your Future</p>
+
+                    <!-- social -->
+                    <div class="flex items-center gap-[15px]">
+                        <figure class="cursor-pointer">
+                            <a href="#">
+                                <img src="./img/social icon/fb.svg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="cursor-pointer">
+                            <a href="#">
+                                <img src="./img/social icon/twi.svg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="cursor-pointer">
+                            <a href="#">
+                                <img src="./img/social icon/ins.svg" alt="">
+                            </a>
+                        </figure>
+                        
+                    </div>
+                    <!-- social end -->
+                </div>
+                <!-- single box end -->
+
+                <!-- single box -->
+                <div class="col-span-1 mb-[15px]">
+                    <div class="w-[112px] lg:mx-auto md:mx-auto">
+                        <h3 class="text-[25px] text-[#000000]">Quick link</h3>
+                        <p class="text-[15px] text-[#000000] py-[22px]">Staking</p>
+                    </div>
+                </div>
+                <!-- single box end -->
+
+                <!-- single box -->
+                <div class="col-span-1">
+                    <h3 class="text-[25px] text-[#000000]">Newsletter</h3>
+                    <div class="my-[14px] max-w-[391px] relative">
+                        <input class="w-full p-[23px] bg-[#FFFFFF] rounded-[10px]" type="email" name="" id="" placeholder="Enter email">
+
+                        <a class="absolute top-[5px] right-[5px] bg-[#2862FA] py-[19px] px-[19px] rounded-[10px]" href="#">
+                            <img src="./img/sent-mail.svg" alt="">
+                        </a>
+                    </div>
+                    <p class="text-[#635B93] text-[12px]">We don’t spam so be worry free</p>
+                </div>
+                <!-- single box end -->
+            </div>
+
+            <div class="py-[25px]">
+                <p class="text-[#635B93] text-base leading-[30px]">Copyright © 2023 MyCompany, Inc. All rights reserved. This website, including all of its contents, text, images, graphics, sound files, video files, and any other materials, are the property of MyCompany, Inc. and are protected by United States and international copyright laws.
+                No part of this website may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of MyCompany, Inc., except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.</p>
+            </div>
+        </div>
+        <!-- footer end -->
+    </div>
+    <!-- home page end -->
+
+    <!-- js link -->
+    <script src="./app.js"></script>
+    <!-- js link emd -->
+</body>
+</html>
